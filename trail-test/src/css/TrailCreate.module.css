@@ -1,0 +1,518 @@
+.new_trail_text {
+  color: #6C7885;
+}
+
+.new_trail_bg {
+  background-color: #FAFBFF;
+}
+
+.tabs_bg {
+  background-color: #FFF;
+  border: 1px solid #F5F5F5;
+  border-radius: 1rem;
+}
+
+.file_upload {
+  border: 1px dashed #DDDDDD;
+  border-radius: 0.5rem;
+  min-height: 15rem;
+}
+
+.upload_text_black {
+  color: #000;
+  font-weight: 900;
+}
+
+.upload_text_blue {
+  color: #007AF7;
+  font-weight: 900;
+}
+
+.form_label {
+  color: #787D84;
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.show_trail_bg {
+  background: #FAFBFF;
+}
+
+.footer_bg {
+  background-color: #116F64BF;
+}
+
+input.form_input,
+select.form_input,
+textarea.form_input {
+  background-color: #FFF;
+  font-weight: 500;
+  color: #535353;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1rem;
+  border-radius: 0.5rem;
+}
+
+.form_input::placeholder,
+.form_input:focus {
+  color: #787D84;
+}
+
+button.save_button {
+  color: #000;
+  background-color: #F2F2F2;
+  border: none;
+  font-weight: 800;
+  font-size: 0.9rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  border-radius: 0.7rem;
+}
+
+.description_input {
+  min-height: 10rem;
+  border: 1px solid #DDDDDD;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.map_container_trail_content {
+  width: 100% !important;
+  height: 38rem !important;
+  border-radius: 1rem;
+}
+
+.map_container_overview {
+  width: 100% !important;
+  height: 38rem !important;
+  border-radius: 1rem;
+}
+
+.map_left_text {
+  color: #6C7885;
+  font-size: 1.8rem;
+}
+
+button.point_save_button,
+button.point_save_button:visited {
+  color: #FFF;
+  background-color: #1976D3;
+  border: none;
+  border-radius: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+button.point_save_button:hover,
+button.point_save_button:focus,
+button.point_save_button:not(:disabled):not(:disabled):active {
+  color: #FFF;
+  background-color: #145ca3;
+  border: none;
+}
+
+button.point_delete_button,
+button.point_delete_button:visited {
+  color: #FFF;
+  background-color: #c05454;
+  border: none;
+  border-radius: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+button.point_delete_button:hover,
+button.point_delete_button:focus,
+button.point_delete_button:not(:disabled):not(:disabled):active {
+  color: #FFF;
+  background-color: #8c2929;
+  border: none;
+}
+
+.accordion_header>button.accordion-button:not(.collapsed) {
+  background-color: #F3F3F3;
+}
+
+.overview_heading {
+  color: #000;
+  font-weight: 900;
+  font-size: 1.1rem;
+  border-bottom: 1px solid #DEE2E6;
+}
+
+.accordion_point_title {
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+.accordion_point_question_type {
+  color: #939CA7;
+  font-size: 0.9rem;
+  font-weight: 300;
+  padding-top: 0.1rem;
+}
+
+.accordion_point_coords {
+  color: #6C7885;
+  font-size: 0.9rem;
+}
+
+button.accordion_buttons,
+button.accordion_buttons:visited {
+  border: none;
+  border-radius: 0.5rem;
+}
+
+button.accordion_buttons:hover,
+button.accordion_buttons:focus,
+button.accordion_buttons:not(:disabled):not(:disabled):active {
+  background-color: #dfdfdf;
+  border: none;
+}
+
+div.accordion_divider_bottom {
+  border-bottom: 1px solid #DEE2E6;
+}
+
+div.accordion_divider_top {
+  border-top: 1px solid #DEE2E6;
+}
+
+.accordion_point_answers_index {
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #E6E8EA;
+  border-radius: 0.3rem;
+  font-weight: 900;
+  font-size: 1.1rem;
+}
+
+.accordion_point_answers_index_correct {
+  color: #fff;
+  background-color: #7FCEC6;
+  border: 1px solid #7FCEC6;
+  border-radius: 0.3rem;
+  font-weight: 900;
+  font-size: 1.1rem;
+}
+
+.accordion_point_answers_text {
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #E6E8EA;
+  border-radius: 0.3rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.accordion_point_answers_text_correct {
+  color: #fff;
+  background-color: #7FCEC6;
+  border: 1px solid #7FCEC6;
+  border-radius: 0.3rem;
+  font-weight: 900;
+  font-size: 1.1rem;
+}
+
+.accordion_slider_value {
+  color: #007AF7;
+}
+
+.accordion_text_gray {
+  color: #6C7885;
+}
+
+.accordion_correct_feedback {
+  color: #59944d;
+  background-color: #ddffd6;
+  border: 1px solid #59944d;
+  border-radius: 0.3rem;
+  font-weight: 500;
+}
+
+.accordion_incorrect_feedback {
+  color: #944d4d;
+  background-color: #ffd6d6;
+  border: 1px solid #944d4d;
+  border-radius: 0.3rem;
+  font-weight: 500;
+}
+
+h1.modal_heading {
+  font-size: 1.2rem;
+  color: #000;
+  font-weight: 800;
+}
+
+p.modal_text {
+  font-size: 0.9rem;
+  color: #6D7174;
+}
+
+button.modal_delete_button,
+button.modal_delete_button:visited {
+  color: #FFF;
+  background-color: #F24646;
+  border: none;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+}
+
+button.modal_delete_button:hover,
+button.modal_delete_button:focus,
+button.modal_delete_button:not(:disabled):not(:disabled):active {
+  color: #000;
+  background-color: #8c2929;
+  border: none;
+}
+
+button.modal_cancel_button,
+button.modal_cancel_button:visited {
+  color: #54575E;
+  background-color: #F2F2F2;
+  border: none;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+}
+
+button.modal_cancel_button:hover,
+button.modal_cancel_button:focus,
+button.modal_cancel_button:not(:disabled):not(:disabled):active {
+  color: #fff;
+  background-color: #99A0A6;
+  border: none;
+}
+
+button.practice_check_button,
+button.practice_check_button:visited {
+  color: #000;
+  background-color: #F9F871;
+  border: none;
+  border-radius: 0.25rem;
+  transition-duration: 0.5s;
+}
+
+button.practice_check_button:hover,
+button.practice_check_button:focus,
+button.practice_check_button:not(:disabled):not(:disabled):active {
+  color: #000;
+  background-color: #d6d63b;
+  border: none;
+}
+
+a.practice_check_button,
+a.practice_check_button:visited {
+  color: #000;
+  background-color: #F9F871;
+  border: none;
+  border-radius: 0.25rem;
+  transition-duration: 0.5s;
+}
+
+a.practice_check_button:hover,
+a.practice_check_button:focus,
+a.practice_check_button:not(:disabled):not(:disabled):active {
+  color: #000;
+  background-color: #d6d63b;
+  border: none;
+}
+
+button.practice_check_button:disabled {
+  color: #000;
+  background-color: #F9F87180;
+  border: none;
+}
+
+button.practice_check_button_correct,
+button.practice_check_button_correct:visited {
+  color: #fff;
+  background-color: #000;
+  border: none;
+  border-radius: 0.25rem;
+  transition-duration: 0.5s;
+}
+
+button.practice_check_button_correct:hover,
+button.practice_check_button_correct:focus,
+button.practice_check_button_correct:not(:disabled):not(:disabled):active {
+  color: #fff;
+  background-color: #3a3939;
+  border: none;
+}
+
+button.practice_check_button_incorrect,
+button.practice_check_button_incorrect:visited {
+  color: #000;
+  background-color: #FCEAFF;
+  border: none;
+  border-radius: 0.25rem;
+  transition-duration: 0.5s;
+}
+
+button.practice_check_button_incorrect:hover,
+button.practice_check_button_incorrect:focus,
+button.practice_check_button_incorrect:not(:disabled):not(:disabled):active {
+  color: #000;
+  background-color: #d3a3db;
+  border: none;
+}
+
+
+div.modal_footer {
+  border: none;
+}
+
+div.progress_bar {
+  --bs-progress-bar-bg: #4DA1CE !important;
+}
+
+.form_label_2 {
+  color: #787D84;
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+
+.sticky_default {
+  background-color: #fff;
+}
+
+.sticky_correct {
+  background-color: #F9F871;
+}
+
+.sticky_incorrect {
+  background-color: #8264A3;
+}
+
+.feedback_correct {
+  color: #000;
+  font-size: 1.1rem;
+}
+
+.feedback_incorrect {
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.full_height {
+  height: 100vh;
+}
+
+.full_height_2 {
+  height: 75vh;
+}
+
+.show_trail_div_border_top {
+  border-top: 1.5px solid #F1F1F1;
+}
+
+button.practice_check_button_incorrect,
+button.practice_check_button_incorrect:visited {
+  color: #000;
+  background-color: #FCEAFF;
+  border: none;
+  border-radius: 0.25rem;
+  transition-duration: 0.5s;
+}
+
+button.practice_check_button_incorrect:hover,
+button.practice_check_button_incorrect:focus,
+button.practice_check_button_incorrect:not(:disabled):not(:disabled):active {
+  color: #000;
+  background-color: #d3a3db;
+  border: none;
+}
+
+a.show_all_button,
+a.show_all_button:visited {
+  color: #0E2134;
+  background-color: #F7F7FC;
+  border: 1px solid #8B8FAC;
+  font-weight: 300;
+  border-radius: 0.25rem;
+}
+
+a.show_all_button:hover,
+a.show_all_button:focus,
+a.show_all_button:not(:disabled):not(:disabled):active {
+  background-color: #d4d4d4;
+  border: 1px solid #8B8FAC;
+}
+
+button.show_all_button,
+button.show_all_button:visited {
+  color: #0E2134;
+  background-color: #F7F7FC;
+  border: 1px solid #8B8FAC;
+  font-weight: 300;
+  border-radius: 0.25rem;
+}
+
+button.show_all_button:hover,
+button.show_all_button:focus,
+button.show_all_button:not(:disabled):not(:disabled):active {
+  color: #0E2134;
+  background-color: #d4d4d4;
+  border: 1px solid #8B8FAC;
+}
+
+a.upload_button,
+a.upload_button:visited {
+  color: #7FCEC6;
+  background-color: #F7F7FC;
+  border: 1.5px solid #7FCEC6;
+  font-weight: 300;
+  border-radius: 0.25rem;
+}
+
+a.upload_button:hover,
+a.upload_button:focus,
+a.upload_button:not(:disabled):not(:disabled):active {
+  color: #7FCEC6;
+  background-color: #e2e2e2;
+  border: 1.5px solid #7FCEC6;
+}
+
+a.my_journey_button,
+a.my_journey_button:visited {
+  color: #000;
+  font-weight: 900;
+  background-color: #F9F871;
+  border-radius: 0.25rem;
+  border: none;
+  transition-duration: 0.5s;
+}
+
+a.my_journey_button:hover,
+a.my_journey_button:focus,
+a.my_journey_button:not(:disabled):not(:disabled):active {
+  color: #000;
+  background-color: #FCCE0D;
+  transition-duration: 0.5s;
+}
+
+button.save_changes_button,
+button.save_changes_button:visited {
+  color: #fff;
+  font-weight: 900;
+  background-color: #7FCEC6;
+  border-radius: 0.25rem;
+  border: none;
+  transition-duration: 0.5s;
+}
+
+button.save_changes_button:hover,
+button.save_changes_button:focus,
+button.save_changes_button:not(:disabled):not(:disabled):active {
+  color: #fff;
+  background-color: #62aaa3;
+  transition-duration: 0.5s;
+}
+
+@media (max-width: 767.98px) {
+  .form_label_2 {
+    color: #787D84;
+    font-size: 1rem;
+    font-weight: 200;
+  }
+}

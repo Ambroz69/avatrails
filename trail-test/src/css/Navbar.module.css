@@ -1,0 +1,61 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.sidebar {
+  background-color: #191C21;
+  height: 100vh;
+  max-width: 27rem;
+  min-width: 17rem;
+  position: sticky;
+  top: 0;
+}
+
+a.sidebar_link {
+  font-weight: 200;
+  color: #4E5156;
+  font-size: 1rem;
+}
+
+a.sidebar_link:hover, a.sidebar_link:focus {
+  color: #E2E4E3;
+  text-decoration: none;
+}
+
+a.sidebar_link_active {
+  color: #E2E4E3;
+}
+
+a.sidebar_link_active_bg {
+  background-color: #282B30;
+}
+
+.sidebar_link_profile_name {
+  font-weight: 200;
+  color: #E2E4E3;
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+
+.sidebar_link_profile_email {
+  font-weight: 800;
+  color: #4E5156;
+  font-size: 0.7rem;
+  text-decoration: none;
+}
+
+.sidebar_submenu {
+  margin-left: 1.4rem;
+}
+
+.sidebar_logout_btn:hover, a.sidebar_logout_btn:focus {
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background-color: #282B30;
+}
+
+.icon_active {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(5%) saturate(323%) hue-rotate(68deg) brightness(93%) contrast(93%);
+}

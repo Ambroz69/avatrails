@@ -1,0 +1,146 @@
+.show_trail_bg {
+  background: #FAFBFF;
+}
+
+.white_bg {
+  background: #FFF;
+}
+
+.trail_card_div {
+  cursor: pointer;
+}
+
+.show_trail_div_border {
+  border: 1px solid #F1F1F1;
+  border-radius: 1rem;
+}
+
+.show_trail_div_border_top {
+  border-top: 1px solid #F1F1F1;
+  border-radius: 1rem;
+  border-radius: 0 0 1rem 1rem;
+}
+
+.show_trail_div_border_right {
+  border-right: 1px solid #F1F1F1;
+}
+
+.trail_content_heading {
+  color: #23242A;
+  font-weight: 900;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.trail_card_description {
+  color: #000;
+  font-size: 1rem;
+}
+
+.trail_card_value {
+  color: #888C92;
+  font-size: 1rem;
+}
+
+.trail_heading {
+  color: #000;
+  font-weight: 900;
+  font-size: 1.6rem;
+  vertical-align: middle;
+}
+
+.trail_description {
+  color: #91979F;
+  font-size: 1.1rem;
+}
+
+.rating_practice_apply_button {
+  border: 1px solid #F1F1F1;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+.rating_practice_apply_text {
+  font-size: 0.85rem;
+  font-weight: 900;
+}
+
+.lower_card_heading {
+  color: #23242A;
+  font-weight: 900;
+  font-size: 1.3rem;
+}
+
+a.show_all_button,
+a.show_all_button:visited {
+  color: #0E2134;
+  background-color: #FFF;
+  border: 1px solid #8B8FAC;
+  font-weight: 900;
+  border-radius: 0.25rem;
+}
+
+a.show_all_button:hover,
+a.show_all_button:focus,
+a.show_all_button:not(:disabled):not(:disabled):active {
+  background-color: #d4d4d4;
+  border: 1px solid #8B8FAC;
+}
+
+a.start_button,
+a.start_button:visited {
+  color: #000;
+  background-color: #F9F871;
+  border: none;
+  font-weight: 400;
+  border-radius: 0.25rem;
+}
+
+a.start_button:hover,
+a.start_button:focus,
+a.start_button:not(:disabled):not(:disabled):active {
+  color: #000;
+  background-color: #d1d141;
+  border: none;
+}
+
+.nav_2_item {
+  text-decoration: none;
+  color: #00000099;
+}
+
+.nav_2_item_current {
+  text-decoration: none;
+  color: #000;
+}
+
+.certification_image {
+  width: 18rem;
+  height: 11rem;
+}
+
+.QR_code_image {
+  width: 10rem;
+  height: 9.5rem;
+}
+
+@media (max-width: 767.98px) {
+  .certification_image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .lower_card_heading {
+    color: #23242A;
+    font-weight: 900;
+    font-size: 1.5rem;
+  }
+
+  .QR_code_image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+}
