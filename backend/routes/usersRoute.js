@@ -34,26 +34,26 @@ router.post('/register', async (request, response) => {
       primaryLanguage: request.body.primaryLanguage,
       password: hashedPassword,
       role: 'explorer', 
-      verified: false,
+      verified: true, // turn off verification
       verificationToken: null,
     });
 
 
     // generate the verification token
-    const emailToken = jwt.sign(
+    /*const emailToken = jwt.sign(
       { email: request.body.email },
       process.env.EMAIL_SECRET,
       { expiresIn: '1d' }
-    );
+    );*/
 
     // attach token to user
-    user.verificationToken = emailToken;
+    //user.verificationToken = emailToken;
 
     // save user
     await user.save();
 
     // configure nodemailer
-    const transporter = nodemailer.createTransport({
+    /*const transporter = nodemailer.createTransport({
       host: process.env.MAIL_SERVER,
       port: 465,
       secure: true,
@@ -61,10 +61,10 @@ router.post('/register', async (request, response) => {
         user: process.env.MAIL_USER,
         pass: process.env.MAIL_PASSCODE,
       },
-    });
+    });*/
 
     // send the verification email
-    const mailOptions = {
+    /*const mailOptions = {
       from: process.env.MAIL_USER,
       to: request.body.email,
       subject: 'AVAtar - Account verification',
@@ -78,11 +78,12 @@ router.post('/register', async (request, response) => {
       `,
     };
 
-    await transporter.sendMail(mailOptions);
+    await transporter.sendMail(mailOptions);*/
 
     // respond the client
     return response.status(201).json({
-      message: 'User created successfully. Please check your email to activate the account.',
+      //message: 'User created successfully. Please check your email to activate the account.',
+      message: 'User created successfully. You can login to your account.',
     })
 
   } catch (error) {
@@ -424,6 +425,38 @@ router.put('/updateRole/:id', auth, async (request, response) => {
   } catch (error) {
     console.log(error.message);
     response.status(500).send({ message: error.message });
+  }
+});
+
+// Route for adding xp for completing trail
+router.put('/add-xp/:id', auth, async(request, response) => {
+  const { id } = request.params;
+  const { xp } = request.body;
+  try {
+    const user = await User.findById(id);
+    if (!user) return response.status(404).send('User not found');
+
+    user.totalXP = (user.totalXP || 0) + xp;
+    await user.save();
+
+    response.status(200).json({ message: 'XP updated', totalXP: user.totalXP });
+  } catch (error) {
+    console.error(error);
+    response.status(500).json({ message: 'Failed to update XP', error});
+  }
+});
+
+// Route for TOP10 leaderboard
+router.get('/leaderboard', async (request, response) => {
+  try {
+    const topUsers = await User.find({}, 'name email totalXP')
+      .sort({ totalXP: -1 })
+      .limit(10);
+      return response.status(201).send({
+        data: topUsers
+      });
+  } catch (error) {
+    response.status(500).json({ message: 'Failed to load leaderboard' });
   }
 });
 
